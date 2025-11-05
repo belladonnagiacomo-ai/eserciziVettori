@@ -17,7 +17,7 @@ namespace eserciziArray
 
             for (int z = num.Length - 1; z >= 0; z--)
             {
-                Console.WriteLine(num[z]);
+                Console.WriteLine($"[{num[z]}]");
 
             }
             Console.WriteLine("-----------------------------");
@@ -34,7 +34,7 @@ namespace eserciziArray
 
                 if (i % 2 == 0)
                 {
-                    Console.WriteLine(array[i]);
+                    Console.WriteLine($"[{array[i]}]");
                 }
             }
 
@@ -54,7 +54,7 @@ namespace eserciziArray
             {
                 if (array2[i] % 2 != 0)
                 {
-                    Console.WriteLine(array2[i]);
+                    Console.WriteLine($"[{array2[i]}]");
                 }
             }
             Console.WriteLine("-----------------------------");
@@ -110,7 +110,20 @@ namespace eserciziArray
             media = somma / N;
             Console.WriteLine("il numero piu piccolo e: " + min);
             Console.WriteLine("il numero piu grande e: " + max);
-            Console.WriteLine("la media e: " + media);
+            Console.WriteLine("la media e: " + media); 
+
+            Console.WriteLine("-----------------------------");
+
+            int[] array5 = new int[N];
+
+            for (int i = 0; i < N; i++)
+            {
+                Console.WriteLine("Dammi un numero");
+                int num5 = Convert.ToInt32(Console.ReadLine());
+
+                array5[i] = num5;
+            }
+
         }
     }
 }

@@ -20,6 +20,7 @@ namespace eserciziArray
                 Console.WriteLine(num[z]);
 
             }
+            Console.WriteLine("-----------------------------");
             int[] array = new int[N];
 
             for (int i = 0; i < N; i++)
@@ -37,16 +38,16 @@ namespace eserciziArray
                 }
             }
 
-
+            Console.WriteLine("-----------------------------");
 
             int[] array2 = new int[N];
 
             for (int i = 0; i < N; i++)
             {
                 Console.WriteLine("Dammi un numero");
-                int numero = Convert.ToInt32(Console.ReadLine());
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-                array2[i] = numero;
+                array2[i] = num2;
             }
 
             for (int i = 0; i < N; i++)
@@ -56,10 +57,30 @@ namespace eserciziArray
                     Console.WriteLine(array2[i]);
                 }
             }
+            Console.WriteLine("-----------------------------");
+            int[] array3 = new int[N];
 
+            for (int i = 0; i < N; i++)
+            {
+                Console.WriteLine("Dammi un numero");
+                int num3 = Convert.ToInt32(Console.ReadLine());
 
-
-
+                array3[i] = num3;
+            }
+            int a = 0, p = 0;
+            for (int i = 0;i < N; i++)
+            {
+                if (array3[i] % 2 != 0)
+                {
+                     a++;
+                }
+                else
+                {
+                    p++;
+                }
+            }
+            Console.WriteLine("ci sono " + p + " numeri pari");
+            Console.WriteLine("ci sono " + a + " numeri dispari");
 
 
         }

@@ -82,7 +82,35 @@ namespace eserciziArray
             Console.WriteLine("ci sono " + p + " numeri pari");
             Console.WriteLine("ci sono " + a + " numeri dispari");
 
+            Console.WriteLine("-----------------------------");
 
+            int[] array4 = new int[N];
+
+            for (int i = 0; i < N; i++)
+            {
+                Console.WriteLine("Dammi un numero");
+                int num4 = Convert.ToInt32(Console.ReadLine());
+
+                array4[i] = num4;
+            }
+            int max = -10000, min = 10000, somma = 0;
+            float media = 0;
+            for (int i = 0; i < N; i++)
+            {
+                if(array4[i] > max)
+                {
+                    max = array4[i];
+                }
+                if(array4[i] < min)
+                {
+                    min = array4[i];
+                }
+                somma = array4[i] + somma;
+            }
+            media = somma / N;
+            Console.WriteLine("il numero piu piccolo e: " + min);
+            Console.WriteLine("il numero piu grande e: " + max);
+            Console.WriteLine("la media e: " + media);
         }
     }
 }

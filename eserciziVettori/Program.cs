@@ -7,7 +7,7 @@ namespace eserciziArray
         static void Main(string[] args)
         {
             int N = 5;
-            int[] num = { 5, 8, 9, 25, -5 };
+            int[] num;
             num = new int[N];
             for (int i = 0; i < N; i++)
             {
